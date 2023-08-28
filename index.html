@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="left-bar-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </button>
+            <h1><a href="/">News App</a></h1>
+            <div class="option-container"></div>
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search" name="search" value="">
+                <button onclick="search()">search</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body-container">
+        <div class="left-bar">
+            <ul>
+                <li><h3>Categroy</h3></li>
+                <li class="side-option-container">
+                </li>
+            </ul>
+
+            <ul>
+                <li><h3>Country</h3></li>
+                <li class="country-container"></li>           
+             </ul>
+
+        </div> 
+
+        <div class="main">
+            <div class="loading-animation"></div>
+            <div class="container">
+                <div class="news-card">
+                    <div class="news-img-container">
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                    <div class="news-content">
+                        <!-- <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, perferendis eius alias dolores unde eveniet consectetur molestiae obcaecati impedit neque sunt odit, dicta temporibus modi tempore! Commodi deserunt totam molestiae?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id amet eos fuga commodi at magnam tempore mollitia ipsa perferendis, expedita vero explicabo ullam nesciunt, natus, quas magni. Earum, nemo tempora.</p>
+                <a href="#">Read more</a> -->
+                    </div>
+                </div>
+                <div class="not-found-data">
+                    <p>
+                        404 No data found!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Thanks for visiting.</h3>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="api-key.js"></script>
+
+</html>
