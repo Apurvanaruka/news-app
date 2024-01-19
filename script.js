@@ -6,7 +6,7 @@ const leftBarBtn = document.querySelector('.left-bar-btn');
 const sideOptionContainer = document.querySelector(".side-option-container");
 
 
-const API_KEY = "bc84bc488a86496fbf4070399a6f30a4";
+const API_KEY = "bc625bf87bae4d43a2dd009548a1af77";
 const options = [
     "general",
     "entertainment",
