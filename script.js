@@ -5,6 +5,8 @@ const leftBar = document.querySelector('.left-bar');
 const leftBarBtn = document.querySelector('.left-bar-btn'); 
 const sideOptionContainer = document.querySelector(".side-option-container");
 
+
+const API_KEY = "bc84bc488a86496fbf4070399a6f30a4";
 const options = [
     "general",
     "entertainment",
@@ -98,14 +100,9 @@ const generalUI = (articles) => {
 function createOptions(){
     for(let i of options){
         optionContainer.innerHTML += `<button class="option ${i == "general"?"active":""}" onclick="selectCatagory(event,'${i}')">${i}</button>`;
-    };
+    }
 }
 
-// funtion createCountry(){
-//     for(let i of ){
-
-//     } 
-// }
 
 async function selectCatagory(e, category){
     let options = document.querySelectorAll('.option');
